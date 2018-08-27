@@ -1,3 +1,24 @@
-<p>
-  search works!
-</p>
+<div class="news">
+
+
+
+    <div class="col-md-6">
+      <ng-container *ngFor="let result of data.results">
+        <!-- <ng-container *ngFor="let outbound of result.outbounds">
+          <ng-container *ngFor="let flight of outbound.flights"> -->
+
+
+
+
+          <!-- <a href="{{data.results.}}"> <h2 class="card-header t">{{article.title}}</h2> -->
+
+<p>{{result.outbound.flights[0].destination.airport}}</p>
+               <p>{{result.fare.total_price}}</p>
+
+
+
+            <!-- </ng-container>
+            </ng-container> -->
+            </ng-container>
+        </div>
+        </div>
