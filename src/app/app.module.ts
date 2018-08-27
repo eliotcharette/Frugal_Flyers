@@ -16,6 +16,7 @@ import { ResultsComponent } from './results/results.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
+import { IcelandComponent } from './iceland/iceland.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ItalyComponent } from './italy/italy.component';
     ResultsComponent,
     ProfileComponent,
     ColombiaComponent,
-    ItalyComponent
+    ItalyComponent,
+    IcelandComponent
   ],
   imports: [
     MatButtonModule,

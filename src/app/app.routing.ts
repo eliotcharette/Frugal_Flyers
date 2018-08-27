@@ -4,6 +4,7 @@ import { SearchComponent } from './search/search.component';
 import { ResultsComponent } from './results/results.component';
 import { ItalyComponent } from './italy/italy.component';
 import { ColombiaComponent } from './colombia/colombia.component';
+import { IcelandComponent } from './iceland/iceland.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'colombia',
     component: ColombiaComponent
+  },
+  {
+    path: 'iceland',
+    component: IcelandComponent
   }
 ];
 
