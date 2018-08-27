@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -36,8 +36,11 @@ import { IcelandComponent } from './iceland/iceland.component';
   imports: [
     MatButtonModule,
     MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
     BrowserAnimationsModule,
-    BrowserModule
+    BrowserModule,
     FormsModule,
     HttpModule,
     routing
