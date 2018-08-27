@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +17,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
-
 
 @NgModule({
   declarations: [
@@ -34,7 +34,10 @@ import { IcelandComponent } from './iceland/iceland.component';
     IcelandComponent
   ],
   imports: [
-    BrowserModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule,
+    BrowserModule
     FormsModule,
     HttpModule,
     routing
