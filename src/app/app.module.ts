@@ -13,6 +13,8 @@ import { DealsComponent } from './deals/deals.component';
 import { LoginComponent } from './login/login.component';
 import { ResultsComponent } from './results/results.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ColombiaComponent } from './colombia/colombia.component';
+import { ItalyComponent } from './italy/italy.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ProfileComponent } from './profile/profile.component';
     DealsComponent,
     LoginComponent,
     ResultsComponent,
-    ProfileComponent
+    ProfileComponent,
+    ColombiaComponent,
+    ItalyComponent
   ],
   imports: [
     BrowserModule,
