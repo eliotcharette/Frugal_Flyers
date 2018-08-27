@@ -1,33 +1,48 @@
-<div class="news">
 
+<h1>Search for Flights</h1>
 
+<div class="card card-body">
 
-    <div class="col-md-6">
-      <ng-container *ngFor="let result of data.results">
-        <!-- <ng-container *ngFor="let outbound of result.outbounds">
-          <ng-container *ngFor="let flight of outbound.flights"> -->
-
-
-
-
-          <!-- <a href="{{data.results.}}"> <h2 class="card-header t">{{article.title}}</h2> -->
-
-     <p>Flight Number: {{result.outbound.flights[0].flight_number}}</p>
-     <p>Airport Origin: {{result.outbound.flights[0].origin.airport}}</p>
-     <p>Airport Destination: {{result.outbound.flights[0].destination.airport}}</p>
-     <p>Terminal: {{result.outbound.flights[0].destination.terminal}}</p>
-     <p>Depart Date/Time: {{result.outbound.flights[0].departs_at}}</p>
-     <p>Arrive Date/Time: {{result.outbound.flights[0].arrives_at}}</p>
-     <p>Seats Remaining: {{result.outbound.flights[0].booking_info.seats_remaining}}</p>
-     <p>Flight Duration: {{result.outbound.duration}}</p>
-
-    <p>${{result.fare.total_price}}</p>
+  <div>
+    <label>Departure City</label>
     <br>
+    <input #newDeparture>
+  </div>
 
+  <div>
+    <label>Arrival City</label>
+    <br>
+    <input #newArrival>
+  </div>
 
+  <div>
+    <label>Departure Date</label>
+    <br>
+    <input #newDepartDate>
+  </div>
 
-            <!-- </ng-container>
-            </ng-container> -->
-            </ng-container>
-        </div>
-        </div>
+  <div>
+    <label>Returning Date</label>
+    <br>
+    <input #newReturnDate>
+  </div>
+
+  <div>
+    <label>How many passengers</label>
+    <br>
+    <select #newPassenger>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+  </div>
+
+  <button routerLink="results">Search</button>
+</div>
+<app-featured></app-featured>
