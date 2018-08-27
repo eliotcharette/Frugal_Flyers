@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { apiKey } from './../env';
@@ -8,7 +8,7 @@ import { apiKey } from './../env';
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css']
 })
-export class ResultsComponent implements OnInit {
+export class ResultsComponent {
   private apiUrl = 'https://api.sandbox.amadeus.com/v1.2/flights/affiliate-search?origin=LON&destination=LAX&departure_date=2018-12-30&adults=1&apikey='+apiKey()
    data: any = {};
    constructor(private http: Http){

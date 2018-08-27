@@ -35,7 +35,7 @@ import { ItalyComponent } from './italy/italy.component';
     MatButtonModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    BrowserModule
+    BrowserModule,
     FormsModule,
     HttpModule,
     routing
