@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import 'rxjs/add/operator/map';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent  {
 
-  constructor() { }
+  private apiUrl = 'https://api.sandbox.amadeus.com/v1.2/flights/affiliate-search?apikey=vEOvRjNVE3RgxiYW3JLG4VJcEO9W6RwP&origin=LON&destination=LAX&departure_date=2018-12-30&adults=1'
+   data: any = {};
+   constructor(private http: Http){
+     console.log("hello");
+     this.getResult();
+     this.getData();
+   }
+   getData()
+   {
+     return this.http.get(this.apiUrl)
+     .map((res: Response) => res.json())
+   }
+   getResult()
+   {
+     this.getData().subscribe(data => {
+       console.log(data);
 
-  ngOnInit() {
-  }
+       this.data =data;
+      })
+   }
 
 }

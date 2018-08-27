@@ -17,7 +17,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
