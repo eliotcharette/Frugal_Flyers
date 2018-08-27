@@ -15,7 +15,7 @@
   </div>
 
   <div>
-    <label>departure date</label>
+    <label>Departure Date</label>
     <br>
     <input #newDepartDate>
   </div>
@@ -42,5 +42,5 @@
     </select>
   </div>
 
-  <button class="btn btn-success" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassengers.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value=''; newPassenger.value=''">Add</button>
+  <button routerLink="results">Search</button>
 </div>
