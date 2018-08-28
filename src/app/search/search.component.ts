@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Search } from '../search.model';
-
 import { FlightService } from '../flight.service';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -29,6 +29,4 @@ export class SearchComponent  {
 
     });
   }
-
-
 }

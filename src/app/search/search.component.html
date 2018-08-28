@@ -1,6 +1,17 @@
-<h1>Search for Flights</h1>
+<form class="example-form">
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Full Legal Name">
+</mat-form-field>
 
-<div class="card card-body">
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Depart from">
+  </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Arrive at">
+  </mat-form-field></td>
+</tr></table>
+
 
   <div>
     <label>Departure City</label>
@@ -50,3 +61,22 @@
 <div *ngIf="results === null">
     <h3>There is no flights for this date.</h3>
 </div>
+
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Adults">
+  </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Children (6 and younger)">
+  </mat-form-field></td>
+</tr></table>
+
+<p>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Departure Date">mm/dd/yyyy</textarea>
+  </mat-form-field>
+</p>
+
+</form>
+<app-featured></app-featured>
+
