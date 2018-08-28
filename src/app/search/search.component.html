@@ -9,21 +9,21 @@
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Depart from">
+      <input #newDeparture matInput placeholder="Depart from">
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Arrive at">
+      <input #newArrival matInput placeholder="Arrive at">
     </mat-form-field></td>
   </tr></table>
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
-      <input matInput [matDatepicker]="picker" placeholder="Depart date">
+      <input #newDepartDate matInput [matDatepicker]="picker" placeholder="Depart date">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput [matDatepicker]="picker2" placeholder="Arrive date">
+      <input #newReturnDate matInput [matDatepicker]="picker2" placeholder="Arrive date">
       <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
       <mat-datepicker #picker2></mat-datepicker>
     </mat-form-field></td>
@@ -31,7 +31,7 @@
 
   <p>
     <mat-form-field>
-      <mat-select placeholder="Number of Adults">
+      <mat-select #newPassenger placeholder="Number of Adults">
         <mat-option *ngFor="let adult of adults" [value]="adult.value">
           {{adult.viewValue}}
         </mat-option>
@@ -42,9 +42,15 @@
       <mat-checkbox>First Class</mat-checkbox>
     </td>
   </p>
-  <button mat-raised-button>Submit</button>
+  <button  mat-raised-button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Submit</button>
 </form>
 </mat-card>
+</div>
+<div *ngIf="results != null">
+<app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+<h3>There is no flights for this date.</h3>
 </div>
 <app-featured></app-featured>
 </div>
