@@ -12,6 +12,7 @@ import { FlightService } from '../flight.service';
 })
 export class SearchComponent  {
 
+
   results: any[] = null;
   noResult: boolean=false;
   constructor(private flightService: FlightService) { }
@@ -41,6 +42,7 @@ export class SearchComponent  {
        {value: '8', viewValue: '8'},
        {value: '9', viewValue: '9'}
      ];
+
 }
 export interface Adult {
   value: string;
