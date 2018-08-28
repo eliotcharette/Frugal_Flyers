@@ -11,6 +11,9 @@ div.body1 {
 button.header{
   padding: 1px;
   margin: 3px;
+  border-radius: 8px;
+  border-color: #00000000;
+  border-width: 3px;
 }
 
 div.moveBody {

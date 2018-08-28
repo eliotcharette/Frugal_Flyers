@@ -40,7 +40,6 @@
   </div>
 
   <button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Search</button>
-</div>
 <div *ngIf="results != null">
   <app-results [childFlights]="results"></app-results>
 </div>
