@@ -33,5 +33,21 @@ export class SearchComponent  {
        this.data =data;
       })
    }
+   adults: Adult[] = [
+       {value: '1', viewValue: '1'},
+       {value: '2', viewValue: '2'},
+       {value: '3', viewValue: '3'},
+       {value: '4', viewValue: '4'},
+       {value: '5', viewValue: '5'},
+       {value: '6', viewValue: '6'},
+       {value: '7', viewValue: '7'},
+       {value: '8', viewValue: '8'},
+       {value: '9', viewValue: '9'}
+     ];
+}
 
+
+export interface Adult {
+  value: string;
+  viewValue: string;
 }

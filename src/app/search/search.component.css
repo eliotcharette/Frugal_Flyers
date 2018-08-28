@@ -1,3 +1,4 @@
+
 div.body1 {
   height: 1400px;
   background-image: url("/assets/Main.jpg");
@@ -11,5 +12,15 @@ div.body1 {
 
 input {
 
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 
 }
