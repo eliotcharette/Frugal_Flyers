@@ -5,25 +5,25 @@
   <div>
     <label>Departure City</label>
     <br>
-    <input #newDeparture>
+    <input #newDeparture value="LON">
   </div>
 
   <div>
     <label>Arrival City</label>
     <br>
-    <input #newArrival>
+    <input #newArrival value="LAX">
   </div>
 
   <div>
     <label>Departure Date</label>
     <br>
-    <input #newDepartDate>
+    <input #newDepartDate value="2018-12-18">
   </div>
 
   <div>
     <label>Returning Date</label>
     <br>
-    <input #newReturnDate>
+    <input #newReturnDate value="2018-12-19">
   </div>
 
   <div>
@@ -42,5 +42,11 @@
     </select>
   </div>
 
-  <button routerLink="results">Search</button>
+  <button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Search</button>
+</div>
+<div *ngIf="results != null">
+  <app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+    <h3>There is no flights for this date.</h3>
 </div>

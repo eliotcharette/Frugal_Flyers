@@ -14,7 +14,7 @@ import { DealsComponent } from './deals/deals.component';
 import { LoginComponent } from './login/login.component';
 import { ResultsComponent } from './results/results.component';
 import { ProfileComponent } from './profile/profile.component';
-import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { HttpModule } from '@angular/http';
     MatButtonModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    BrowserModule
+    BrowserModule,
     FormsModule,
     HttpModule,
     routing
