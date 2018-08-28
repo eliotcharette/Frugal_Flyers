@@ -1,8 +1,8 @@
+<mat-card>
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Full Legal Name">
+    <input matInput placeholder="Full Legal Name" value="">
   </mat-form-field>
-
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
       <input matInput placeholder="Depart from">
@@ -11,33 +11,23 @@
       <input matInput placeholder="Arrive at">
     </mat-form-field></td>
   </tr></table>
-
 <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
-      <input matInput [matDatepicker]="picker" placeholder="Depart date">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput [matDatepicker]="picker2" placeholder="Arrive date">
-  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-  <mat-datepicker #picker2></mat-datepicker>
-    </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+  <input matInput placeholder="Depart Date" value="YYYY-MM-DD">
+</mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Arrive Date" value="YYYY-MM-DD">
+  </mat-form-field></td>
   </tr></table>
-
-  <p>
 <mat-form-field>
   <mat-select placeholder="Number of Adults">
     <mat-option *ngFor="let adult of adults" [value]="adult.value">
       {{adult.viewValue}}
     </mat-option>
   </mat-select>
-
 </mat-form-field>
-<td>
 <mat-checkbox>First Class</mat-checkbox>
-</td>
-  </p>
 <button mat-raised-button>Submit</button>
 </form>
+</mat-card>
 <app-featured></app-featured>
