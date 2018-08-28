@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 A Web app that allows users to get a taste of Colombia and help them plan their next trip.
 
 ## Created By
-Eliot Charette | Curt Caldwell | Swati Sahay | Derek Hammer | Eddie Harris | James Hanley
+Eliot Charette(Project Manager) | Curt Caldwell | Swati Sahay | Derek Hammer | Eddie Harris | James Hanley
 August 2018
 
 ## Installation
