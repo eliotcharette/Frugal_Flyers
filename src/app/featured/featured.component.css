@@ -1,18 +1,28 @@
 img {
-  width: 500px;
-  height: 350px;
+
   text-align: center;
-}
-.row {
+  height: 100%;
+  width: 100%;
 
 }
+
+h1.title {
+  color: #fff!important;
+  text-shadow: 1px 1px 1px #000;
+}
+
 
 .top-left {
     position: absolute;
+    margin-left: 10px;
     top: 8px;
-    left: 225px;
     font-size: 35px;
     color: #fff!important;
     text-shadow: 1px 1px 1px #000;
+}
+
+div.moveImage {
+  margin: 10px;
+  border: solid;
 
 }
