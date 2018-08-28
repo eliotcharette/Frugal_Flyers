@@ -7,6 +7,10 @@ div.body1 {
   padding-bottom: 90px;
   font-family: times;
 }
+button.header{
+  padding: 1px;
+  margin: 3px;
+}
 
 div.moveBody {
   padding: 25px;
