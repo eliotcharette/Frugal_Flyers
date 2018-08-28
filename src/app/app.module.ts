@@ -17,7 +17,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
-
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { IcelandComponent } from './iceland/iceland.component';
     ProfileComponent,
     ColombiaComponent,
     ItalyComponent,
-    IcelandComponent
+    IcelandComponent,
+    AboutComponent
   ],
   imports: [
     MatNativeDateModule,
