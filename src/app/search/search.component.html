@@ -1,17 +1,3 @@
-<form class="example-form">
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Full Legal Name">
-</mat-form-field>
-
-<table class="example-full-width" cellspacing="0"><tr>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Depart from">
-  </mat-form-field></td>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Arrive at">
-  </mat-form-field></td>
-</tr></table>
-
 
   <div>
     <label>Departure City</label>
@@ -62,21 +48,48 @@
     <h3>There is no flights for this date.</h3>
 </div>
 
-<table class="example-full-width" cellspacing="0"><tr>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Adults">
-  </mat-form-field></td>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Children (6 and younger)">
-  </mat-form-field></td>
-</tr></table>
+<!-- this is dereks' below -->
 
-<p>
+<form class="example-form">
   <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Departure Date">mm/dd/yyyy</textarea>
+    <input matInput placeholder="Full Legal Name">
   </mat-form-field>
-</p>
 
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Depart from">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Arrive at">
+    </mat-form-field></td>
+  </tr></table>
+
+<table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput [matDatepicker]="picker" placeholder="Depart date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput [matDatepicker]="picker2" placeholder="Arrive date">
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+<mat-form-field>
+  <mat-select placeholder="Number of Adults">
+    <mat-option *ngFor="let adult of adults" [value]="adult.value">
+      {{adult.viewValue}}
+    </mat-option>
+  </mat-select>
+
+</mat-form-field>
+<td>
+<mat-checkbox>First Class</mat-checkbox>
+</td>
+  </p>
+<button mat-raised-button>Submit</button>
 </form>
 <app-featured></app-featured>
-
