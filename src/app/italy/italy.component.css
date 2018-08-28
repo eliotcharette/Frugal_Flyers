@@ -1,0 +1,113 @@
+div.body1 {
+  background-image: url("/assets/italy1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
+}
+
+div.moveBody {
+  padding: 25px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+h1.title {
+  font-size: 100px;
+}
+
+div.top {
+  margin-bottom: 50px;
+}
+
+div.move {
+  margin-bottom: 30px;
+}
+
+div.moveQuote {
+  margin-top: 50px;
+}
+
+p.quote {
+  font-size: 23px;
+  /*font-style: italic;*/
+  font-family: cursive;
+}
+
+p.name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.moveImage {
+  border: solid;
+  float: right;
+  max-width: 500px;
+}
+.mainImage {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+/*div.body1 {
+  background-image: url("/assets/italybackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
+}
+
+div.moveBody {
+  padding: 25px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+h1.title {
+  font-size: 100px;
+}
+
+div.top {
+  margin-bottom: 50px;
+}
+
+div.move {
+  margin-bottom: 30px;
+}
+
+div.moveQuote {
+  margin-top: 50px;
+}
+
+p.quote {
+  font-size: 23px;
+  font-family: cursive;
+}
+
+p.name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.moveImage {
+  border: solid;
+  float: right;
+  max-width: 500px;
+}
+.mainImage {
+  height: 100%;
+  width: 100%;
+}*/

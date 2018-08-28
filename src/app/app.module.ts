@@ -32,7 +32,7 @@ import { AboutComponent } from './about/about.component';
     ColombiaComponent,
     ItalyComponent,
     IcelandComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     MatNativeDateModule,
@@ -50,6 +50,7 @@ import { AboutComponent } from './about/about.component';
     MatMenuModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatNativeDateModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,

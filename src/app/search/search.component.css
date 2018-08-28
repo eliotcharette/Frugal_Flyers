@@ -1,3 +1,14 @@
+
+div.body1 {
+  height: 1400px;
+  background-image: url("/assets/Main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
+}
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -6,4 +17,5 @@
 
 .example-full-width {
   width: 100%;
+
 }
