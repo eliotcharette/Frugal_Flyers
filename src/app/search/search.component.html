@@ -12,6 +12,56 @@
   </mat-form-field></td>
 </tr></table>
 
+
+  <div>
+    <label>Departure City</label>
+    <br>
+    <input #newDeparture value="LON">
+  </div>
+
+  <div>
+    <label>Arrival City</label>
+    <br>
+    <input #newArrival value="LAX">
+  </div>
+
+  <div>
+    <label>Departure Date</label>
+    <br>
+    <input #newDepartDate value="2018-12-18">
+  </div>
+
+  <div>
+    <label>Returning Date</label>
+    <br>
+    <input #newReturnDate value="2018-12-19">
+  </div>
+
+  <div>
+    <label>How many passengers</label>
+    <br>
+    <select #newPassenger>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+  </div>
+
+  <button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Search</button>
+</div>
+<div *ngIf="results != null">
+  <app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+    <h3>There is no flights for this date.</h3>
+</div>
+
 <table class="example-full-width" cellspacing="0"><tr>
   <td><mat-form-field class="example-full-width">
     <input matInput placeholder="Adults">
@@ -29,3 +79,4 @@
 
 </form>
 <app-featured></app-featured>
+
