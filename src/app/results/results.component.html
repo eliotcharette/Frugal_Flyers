@@ -1,35 +1,40 @@
 
 <div class="news">
 
-
+    <h1>Flights:</h1>
 
     <div class="col-md-6">
-      <ng-container *ngFor="let result of data.results">
-        <!-- <ng-container *ngFor="let outbound of result.outbounds">
-          <ng-container *ngFor="let flight of outbound.flights"> -->
+    <ng-container *ngFor="let result of childFlights.results">
+
+    <h2>Outbound</h2>
+     <p>Flight Number: {{result.itineraries[0].outbound.flights[0].flight_number}}</p>
+     <p>Airport Origin: {{result.itineraries[0].outbound.flights[0].origin.airport}}</p>
+     <p>Airport Destination: {{result.itineraries[0].outbound.flights[0].destination.airport}}</p>
+     <p>Terminal: {{result.itineraries[0].outbound.flights[0].destination.terminal}}</p>
+     <p>Depart Date/Time: {{result.itineraries[0].outbound.flights[0].departs_at}}</p>
+     <p>Arrive Date/Time: {{result.itineraries[0].outbound.flights[0].arrives_at}}</p>
+     <p>Seats Remaining: {{result.itineraries[0].outbound.flights[0].booking_info.seats_remaining}}</p>
+     <p>Flight Duration: {{result.itineraries[0].outbound.duration}}</p>
 
 
-
-
-          <!-- <a href="{{data.results.}}"> <h2 class="card-header t">{{article.title}}</h2> -->
-
-     <p>Flight Number: {{result.outbound.flights[0].flight_number}}</p>
-     <p>Airport Origin: {{result.outbound.flights[0].origin.airport}}</p>
-     <p>Airport Destination: {{result.outbound.flights[0].destination.airport}}</p>
-     <p>Terminal: {{result.outbound.flights[0].destination.terminal}}</p>
-     <p>Depart Date/Time: {{result.outbound.flights[0].departs_at}}</p>
-     <p>Arrive Date/Time: {{result.outbound.flights[0].arrives_at}}</p>
-     <p>Seats Remaining: {{result.outbound.flights[0].booking_info.seats_remaining}}</p>
-     <p>Flight Duration: {{result.outbound.duration}}</p>
-
-    <p>${{result.fare.total_price}}</p>
     <br>
+    I<h2>Inbound</h2>
+    <p>Flight Number: {{result.itineraries[0].inbound.flights[0].flight_number}}</p>
+    <p>Airport Origin: {{result.itineraries[0].inbound.flights[0].origin.airport}}</p>
+    <p>Airport Destination: {{result.itineraries[0].inbound.flights[0].destination.airport}}</p>
+    <p>Terminal: {{result.itineraries[0].inbound.flights[0].destination.terminal}}</p>
+    <p>Depart Date/Time: {{result.itineraries[0].inbound.flights[0].departs_at}}</p>
+    <p>Arrive Date/Time: {{result.itineraries[0].inbound.flights[0].arrives_at}}</p>
+    <p>Seats Remaining: {{result.itineraries[0].inbound.flights[0].booking_info.seats_remaining}}</p>
+    <p>Flight Duration: {{result.itineraries[0].inbound.duration}}</p>
+
+   <h3>Total Price:${{result.fare.total_price}}</h3>
 
 
 
-            <!-- </ng-container>
-            </ng-container> -->
-            </ng-container>
+
+
+  </ng-container>
         </div>
         </div>
 <app-search></app-search>
