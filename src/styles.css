@@ -1,5 +1,19 @@
-div.container {
-  margin-top: 90px;
+div.body1 {
+  background-image: url("/assets/ICE.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+div.moveBody {
+  padding: 20px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .8;
 }
 
 h1.title {
@@ -15,5 +29,6 @@ div.move {
 }
 
 p.name {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: bold;
 }
