@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+div.container {
+  margin-top: 90px;
+}
+
+h1.title {
+  font-size: 100px;
+}
+
+div.top {
+  margin-bottom: 50px;
+}
+
+div.move {
+  margin-bottom: 30px;
+}
+
+p.name {
+  font-size: 20px;
+}
