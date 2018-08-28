@@ -1,14 +1,15 @@
 div.body1 {
-  background-image: url("/assets/ICE.jpg");
+  background-image: url("/assets/ICE2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 90px;
   padding-bottom: 90px;
+  font-family: times;
 }
 
 div.moveBody {
-  padding: 20px;
+  padding: 25px;
   border: solid;
   border-width: 1px;
   background-color: white;
@@ -28,7 +29,28 @@ div.move {
   margin-bottom: 30px;
 }
 
+div.moveQuote {
+  margin-top: 50px;
+}
+
+p.quote {
+  font-size: 23px;
+  /*font-style: italic;*/
+  font-family: cursive;
+}
+
 p.name {
   font-size: 23px;
   font-weight: bold;
+}
+
+.moveImage {
+  border: solid;
+  float: right;
+  max-width: 500px;
+}
+.mainImage {
+  height: 100%;
+  width: 100%;
+
 }
