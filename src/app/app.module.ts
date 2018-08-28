@@ -6,6 +6,7 @@ import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import {AboutComponent} from './about/about.component';
 import { NavheaderComponent } from './navheader/navheader.component';
 import { FooterComponent } from './footer/footer.component';
 import { FeaturedComponent } from './featured/featured.component';
@@ -27,6 +28,7 @@ import { IcelandComponent } from './iceland/iceland.component';
     SearchComponent,
     DealsComponent,
     LoginComponent,
+    AboutComponent,
     ResultsComponent,
     ProfileComponent,
     ColombiaComponent,
