@@ -1,38 +1,112 @@
-
 <div class="body1">
-<div class="container">
+  <div class="container">
 
+<mat-card>
 <form class="example-form">
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Full Legal Name">
-</mat-form-field>
-
-<table class="example-full-width" cellspacing="0"><tr>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Depart from">
-  </mat-form-field></td>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Arrive at">
-  </mat-form-field></td>
-</tr></table>
-
-<table class="example-full-width" cellspacing="0"><tr>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Adults">
-  </mat-form-field></td>
-  <td><mat-form-field class="example-full-width">
-    <input matInput placeholder="Children (6 and younger)">
-  </mat-form-field></td>
-</tr></table>
-
-<p>
   <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Departure Date">mm/dd/yyyy</textarea>
+    <input matInput placeholder="Full Legal Name">
   </mat-form-field>
-</p>
 
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input #newDeparture matInput placeholder="Depart from">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input #newArrival matInput placeholder="Arrive at">
+    </mat-form-field></td>
+  </tr></table>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input #newDepartDate matInput [matDatepicker]="picker" placeholder="Depart date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input #newReturnDate matInput [matDatepicker]="picker2" placeholder="Arrive date">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field>
+      <mat-select #newPassenger placeholder="Number of Adults">
+        <mat-option *ngFor="let adult of adults" [value]="adult.value">
+          {{adult.viewValue}}
+        </mat-option>
+      </mat-select>
+
+    </mat-form-field>
+    <td>
+      <mat-checkbox>First Class</mat-checkbox>
+    </td>
+  </p>
+  <button  mat-raised-button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Submit</button>
 </form>
+</mat-card>
 </div>
-
+<div *ngIf="results != null">
+<app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+<h3>There is no flights for this date.</h3>
+</div>
 <app-featured></app-featured>
 </div>
+
+
+
+
+
+
+
+
+<!--
+<div>
+<label>Departure City</label>
+<br>
+<input #newDeparture value="LON">
+</div>
+
+<div>
+<label>Arrival City</label>
+<br>
+<input #newArrival value="LAX">
+</div>
+
+<div>
+<label>Departure Date</label>
+<br>
+<input #newDepartDate value="2018-12-18">
+</div>
+
+<div>
+<label>Returning Date</label>
+<br>
+<input #newReturnDate value="2018-12-19">
+</div>
+
+<div>
+<label>How many passengers</label>
+<br>
+<select #newPassenger>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</div>
+
+<button (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Search</button>
+<div *ngIf="results != null">
+<app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+<h3>There is no flights for this date.</h3>
+</div> -->
