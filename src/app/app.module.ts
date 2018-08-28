@@ -49,6 +49,7 @@ import { IcelandComponent } from './iceland/iceland.component';
     MatMenuModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatNativeDateModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
