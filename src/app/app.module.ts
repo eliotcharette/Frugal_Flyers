@@ -13,7 +13,6 @@ import { SearchComponent } from './search/search.component';
 import { DealsComponent } from './deals/deals.component';
 import { LoginComponent } from './login/login.component';
 import { ResultsComponent } from './results/results.component';
-import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
@@ -21,6 +20,21 @@ import { AboutComponent } from './about/about.component';
 import { HotelsearchComponent } from './hotelsearch/hotelsearch.component';
 import { SearchresultComponent } from './searchresult/searchresult.component';
 import { DealsresultComponent } from './dealsresult/dealsresult.component';
+import { BogotaComponent } from './bogota/bogota.component';
+import { MedellinComponent } from './medellin/medellin.component';
+import { CartagenaComponent } from './cartagena/cartagena.component';
+import { CaliComponent } from './cali/cali.component';
+import { CarribComponent } from './carrib/carrib.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { NewzealandComponent } from './newzealand/newzealand.component';
+import { CroatiaComponent } from './croatia/croatia.component';
+library.add(fas, far, fab);
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +45,6 @@ import { DealsresultComponent } from './dealsresult/dealsresult.component';
     DealsComponent,
     LoginComponent,
     ResultsComponent,
-    ProfileComponent,
     ColombiaComponent,
     ItalyComponent,
     IcelandComponent,
@@ -39,6 +52,14 @@ import { DealsresultComponent } from './dealsresult/dealsresult.component';
     HotelsearchComponent,
     SearchresultComponent,
     DealsresultComponent,
+    BogotaComponent,
+    MedellinComponent,
+    CartagenaComponent,
+    CaliComponent,
+    CarribComponent,
+    NewzealandComponent,
+    CroatiaComponent,
+
   ],
   imports: [
     MatNativeDateModule,
@@ -78,6 +99,7 @@ import { DealsresultComponent } from './dealsresult/dealsresult.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    FontAwesomeModule,
     routing
   ],
   providers: [],

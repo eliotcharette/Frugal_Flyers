@@ -13,6 +13,7 @@
     <td><mat-form-field class="example-full-width">
       <input #newArrival matInput placeholder="Arrive at">
     </mat-form-field></td>
+    <a class="code" href="https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_A">Airports Codes</a>
   </tr></table>
 
 <table class="example-full-width" cellspacing="0"><tr>
@@ -42,7 +43,7 @@
 <app-results [childFlights]="results"></app-results>
 </div>
 <div *ngIf="results === null">
-<h3>There is no flights for this date.</h3>
+<h3></h3>
 </div>
 
 <app-featured></app-featured>

@@ -8,6 +8,13 @@ import { IcelandComponent } from './iceland/iceland.component';
 import { AboutComponent } from './about/about.component';
 import { HotelsearchComponent } from './hotelsearch/hotelsearch.component';
 import { DealsComponent } from './deals/deals.component';
+import { CarribComponent } from './carrib/carrib.component';
+import { BogotaComponent } from './bogota/bogota.component';
+import { CaliComponent } from './cali/cali.component';
+import { CartagenaComponent } from './cartagena/cartagena.component';
+import { MedellinComponent } from './medellin/medellin.component';
+import { NewzealandComponent } from './newzealand/newzealand.component';
+import { CroatiaComponent } from './croatia/croatia.component';
 
 const appRoutes: Routes = [
   {
@@ -42,6 +49,34 @@ const appRoutes: Routes = [
   {
     path: 'hotels',
     component:HotelsearchComponent
+  },
+  {
+    path: 'bogota',
+    component:BogotaComponent
+  },
+  {
+    path: 'medellin',
+    component:MedellinComponent
+  },
+  {
+    path: 'cartagena',
+    component:CartagenaComponent
+  },
+  {
+    path: 'cali',
+    component:CaliComponent
+  },
+  {
+    path: 'carrib',
+    component:CarribComponent
+  },
+  {
+    path: 'newzealand',
+    component: NewzealandComponent
+  },
+  {
+    path: 'croatia',
+    component: CroatiaComponent
   }
 ];
 

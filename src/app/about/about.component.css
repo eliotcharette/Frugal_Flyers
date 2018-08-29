@@ -1,0 +1,158 @@
+div.body1 {
+  background-image: url("/assets/aboutImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
+  height: 1200px;
+}
+
+div.moveBody {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .9;
+  width: 800px;
+
+}
+div.moveImage {
+position: relative;
+}
+.move {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      box-shadow: 5px 5px grey;
+    width: 100%;
+}
+
+div.eddie {
+  padding-top: 80px;
+  text-align: center;
+  color: 	#FFD700;
+  text-shadow: 2px 2px 2px #8A2BE2;
+  position: absolute;
+  top: 130px;
+  /*border: solid;*/
+  width: 125px;
+  height: 275px;
+}
+
+div.eddie:hover:before {
+  background-color: green;
+  content: "Eddie Harris"
+}
+
+div.eliot{
+  text-align: center;
+  padding-top: 85px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 120px;
+  left: 135px;
+  /*border: solid;*/
+  width: 140px;
+  height: 210px;
+}
+
+div.eliot:hover:before {
+  background-color: green;
+  content: "Eliot Charette";
+}
+
+div.curt{
+  text-align: center;
+  padding-top: 90px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 113px;
+  left: 283px;
+  /*border: solid;*/
+  width: 120px;
+  height: 330px;
+}
+
+div.curt:hover:before {
+  background-color: green;
+  content: "Curt Caldwell";
+}
+
+div.derek{
+  padding-top: 85px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 125px;
+  right: 230px;
+  /*border: solid;*/
+  width: 112px;
+  height: 330px;
+}
+
+div.derek:hover:before {
+  background-color: green;
+  content: "Derek Hammer"
+}
+
+div.swati{
+  padding-top: 120px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 125px;
+  right: 133px;
+  /*border: solid;*/
+  width: 92px;
+  height: 330px;
+}
+
+div.swati:hover:before {
+  background-color: green;
+  content: "Swati Sahay";
+}
+
+div.james{
+  padding-top: 100px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 125px;
+  right: 20px;
+  /*border: solid;*/
+  width: 110px;
+  height: 330px;
+
+}
+
+div.james:hover:before {
+  background-color: green;
+  content: "James Hanley";
+}
+
+div.randy{
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  bottom: 25px;
+  left: 100px;
+  /*border: solid;*/
+  width: 170px;
+  height: 235px;
+
+}
+
+div.randy:hover:before {
+  background-color: green;
+  content: "Randy Macho Man";
+}
