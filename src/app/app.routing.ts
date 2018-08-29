@@ -13,7 +13,7 @@ import { CartagenaComponent } from './cartagena/cartagena.component';
 import { MedellinComponent } from './medellin/medellin.component';
 import { NewzealandComponent } from './newzealand/newzealand.component';
 import { CroatiaComponent } from './croatia/croatia.component';
-
+import { BrazilComponent } from './brazil/brazil.component';
 
 const appRoutes: Routes = [
   {
@@ -67,6 +67,10 @@ const appRoutes: Routes = [
   {
     path: 'croatia',
     component: CroatiaComponent
+  },
+  {
+    path: 'brazil',
+    component: BrazilComponent
   }
 ];
 

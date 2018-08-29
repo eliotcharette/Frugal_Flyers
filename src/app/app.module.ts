@@ -29,6 +29,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { NewzealandComponent } from './newzealand/newzealand.component';
 import { CroatiaComponent } from './croatia/croatia.component';
+import { BrazilComponent } from './brazil/brazil.component';
 library.add(fas, far, fab);
 
 
@@ -53,6 +54,7 @@ library.add(fas, far, fab);
     CarribComponent,
     NewzealandComponent,
     CroatiaComponent,
+    BrazilComponent,
   ],
   imports: [
     MatNativeDateModule,
