@@ -1,25 +1,24 @@
 <mat-toolbar class="row"color="primary">
   <div>
-    <span class="col-md-5" color="accent" id="projectTitle">Frugal Flyers <img src="./assets/FF.png" alt=""></span>
+    <span class="col-md-5" color="accent" id="projectTitle"><a routerLink=''><img src="./assets/FF.png" alt="">Frugal Flyers</a> </span>
   </div>
-  <div *ngIf="divChoice != 'home'">
-    <button (click)="divSwitch('home')" class="header col-md-1" routerLink='' mat-raised-button color="accent">
-    Home</button>
+  <div>
+    <span class="col-md-2"><img id="sweetBanner"src="./assets/lensflare.png" ></span>
   </div>
-  <div *ngIf="divChoice != 'colombia'">
-    <button (click)="divSwitch('colombia')" class="header col-md-1" routerLink='/colombia' mat-raised-button color="accent">Colombia</button>
+  <div>
+    <button class="header col-md-1" routerLink='/colombia' mat-raised-button color="accent">Colombia</button>
   </div>
-  <div *ngIf="divChoice != 'italy'">
-    <button (click)="divSwitch('italy')" class="header col-md-1"routerLink='/italy' mat-raised-button color="accent">Italy</button>
+  <div>
+    <button class="header col-md-1"routerLink='/italy' mat-raised-button color="accent">Italy</button>
   </div>
-  <div (click)="divSwitch('iceland')" *ngIf="divChoice != 'iceland'">
+  <div>
     <button  class="header col-md-1"routerLink='/iceland' mat-raised-button color="accent">Iceland</button>
   </div>
-  <div *ngIf="divChoice != 'deals'">
-    <button (click)="divSwitch('deals')" class="header col-md-1" mat-raised-button color="accent">Deals</button>
+  <div>
+    <button class="header col-md-1" mat-raised-button color="accent">Deals</button>
   </div>
-  <div *ngIf="divChoice != 'about'">
-    <button (click)="divSwitch('about')"  class="header col-md-1" routerLink='/about' mat-raised-button color="accent">The Team</button>
+  <div>
+    <button  class="header col-md-1" routerLink='/about' mat-raised-button color="accent">The Team</button>
   </div>
 
 </mat-toolbar>

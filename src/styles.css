@@ -8,6 +8,9 @@ div.body1 {
   padding-bottom: 90px;
   font-family: times;
 }
+#sweetBanner{
+  height: 60px;
+}
 button.header{
   padding: 1px;
   margin: 3px;
@@ -61,4 +64,7 @@ p.name {
   width: 100%;
 
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> master
