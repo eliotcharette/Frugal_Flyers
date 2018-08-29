@@ -1,3 +1,51 @@
-<p>
-  deals works!
-</p>
+
+<div class="body1">
+  <div class="container">
+<mat-card>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Full Legal Name" value="">
+  </mat-form-field>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input #newDeparture matInput placeholder="Depart from">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input #newArrival matInput placeholder="Arrive at">
+    </mat-form-field></td>
+  </tr></table>
+
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+  <input #newDepartDate matInput placeholder="Depart Date" value="YYYY-MM-DD">
+</mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+    <input #newReturnDate matInput placeholder="Arrive Date" value="YYYY-MM-DD">
+  </mat-form-field></td>
+  </tr></table>
+    <mat-form-field>
+      <mat-select #newPassenger placeholder="Number of Adults">
+        <mat-option *ngFor="let adult of adults" [value]="adult.value">
+          {{adult.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <td>
+      <mat-checkbox>First Class</mat-checkbox>
+    </td>
+    <mat-form-field class="example-full-width">
+      <input #newMaxPrice matInput placeholder="Max Price">
+    </mat-form-field>
+  <button  mat-raised-button color="primary" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value, newMaxPrice.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''; newMaxPrice.value = ''">Submit</button>
+</form>
+</mat-card>
+</div>
+<div *ngIf="results != null">
+<app-results [childFlights]="results"></app-results>
+</div>
+<div *ngIf="results === null">
+<h3>There is no flights for this date.</h3>
+</div>
+
+<app-featured></app-featured>
+</div>

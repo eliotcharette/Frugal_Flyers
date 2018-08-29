@@ -17,6 +17,9 @@ import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
 import { AboutComponent } from './about/about.component';
+import { HotelsearchComponent } from './hotelsearch/hotelsearch.component';
+import { SearchresultComponent } from './searchresult/searchresult.component';
+import { DealsresultComponent } from './dealsresult/dealsresult.component';
 import { BogotaComponent } from './bogota/bogota.component';
 import { MedellinComponent } from './medellin/medellin.component';
 import { CartagenaComponent } from './cartagena/cartagena.component';
@@ -46,6 +49,9 @@ library.add(fas, far, fab);
     ItalyComponent,
     IcelandComponent,
     AboutComponent,
+    HotelsearchComponent,
+    SearchresultComponent,
+    DealsresultComponent,
     BogotaComponent,
     MedellinComponent,
     CartagenaComponent,
@@ -53,6 +59,7 @@ library.add(fas, far, fab);
     CarribComponent,
     NewzealandComponent,
     CroatiaComponent,
+
   ],
   imports: [
     MatNativeDateModule,
