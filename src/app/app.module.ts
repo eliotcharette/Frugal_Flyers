@@ -18,6 +18,11 @@ import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
 import { AboutComponent } from './about/about.component';
+import { BogotaComponent } from './bogota/bogota.component';
+import { MedellinComponent } from './medellin/medellin.component';
+import { CartagenaComponent } from './cartagena/cartagena.component';
+import { CaliComponent } from './cali/cali.component';
+import { CarribComponent } from './carrib/carrib.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +38,11 @@ import { AboutComponent } from './about/about.component';
     ItalyComponent,
     IcelandComponent,
     AboutComponent,
+    BogotaComponent,
+    MedellinComponent,
+    CartagenaComponent,
+    CaliComponent,
+    CarribComponent,
   ],
   imports: [
     MatNativeDateModule,
