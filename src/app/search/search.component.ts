@@ -16,9 +16,9 @@ export class SearchComponent  {
   results: any[] = null;
   noResult: boolean=false;
   constructor(private flightService: FlightService) { }
-  submitForm(departure: string,  arrival: string,  depatureDate: string,  returnDate: string,  passengers: number, maxPrice: number) {
+  submitForm(departure: string,  arrival: string,  depatureDate: string,  returnDate: string,  passengers: number) {
     console.log("FORMSUBMITTED");
-    this.flightService.getFlights(departure,  arrival,  depatureDate,  returnDate,  passengers, maxPrice).subscribe(response => {
+    this.flightService.getFlights(departure,  arrival,  depatureDate,  returnDate,  passengers).subscribe(response => {
       // console.log(response._body.json().request_id);
       console.log(response.json().results);
       if(response.json().results.length > 0)

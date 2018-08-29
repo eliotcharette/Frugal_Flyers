@@ -6,8 +6,9 @@
         <li>Flight Duration: {{result.itineraries[0].outbound.duration}}</li>
 
         <mat-tab-group>
-        <div *ngFor="let flight of result.itineraries[0].outbound.flights ">
             <mat-tab label="Outbound Flight">
+        <div *ngFor="let flight of result.itineraries[0].outbound.flights ">
+
               <p>Flight Number: {{flight.flight_number}}</p>
               <p>Airport Origin: {{flight.origin.airport}}</p>
               <p>Airport Destination: {{flight.destination.airport}}</p>
@@ -15,15 +16,17 @@
               <p>Depart Date/Time: {{flight.departs_at}}</p>
               <p>Arrive Date/Time: {{flight.arrives_at}}</p>
               <p>Seats Remaining: {{flight.booking_info.seats_remaining}}</p>
-            </mat-tab>
+
         </div>
+            </mat-tab>
       </mat-tab-group>
         <br>
         <li>Flight Duration: {{result.itineraries[0].inbound.duration}}</li>
         <mat-tab-group>
+          <mat-tab label="Inbound Flight">
         <div *ngFor="let flight of result.itineraries[0].inbound.flights ">
 
-            <mat-tab label="Inbound Flight">
+
               <p>Flight Number: {{flight.flight_number}}</p>
               <p>Airport Origin: {{flight.origin.airport}}</p>
               <p>Airport Destination: {{flight.destination.airport}}</p>
@@ -31,9 +34,10 @@
               <p>Depart Date/Time: {{flight.departs_at}}</p>
               <p>Arrive Date/Time: {{flight.arrives_at}}</p>
               <p>Seats Remaining: {{flight.booking_info.seats_remaining}}</p>
-            </mat-tab>
+
 
         </div>
+              </mat-tab>
         </mat-tab-group>
         <h3>Total Price:${{result.fare.total_price}}</h3>
 
