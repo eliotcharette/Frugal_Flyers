@@ -18,6 +18,9 @@ import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
 import { AboutComponent } from './about/about.component';
+import { HotelsearchComponent } from './hotelsearch/hotelsearch.component';
+import { SearchresultComponent } from './searchresult/searchresult.component';
+import { DealsresultComponent } from './dealsresult/dealsresult.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,9 @@ import { AboutComponent } from './about/about.component';
     ItalyComponent,
     IcelandComponent,
     AboutComponent,
+    HotelsearchComponent,
+    SearchresultComponent,
+    DealsresultComponent,
   ],
   imports: [
     MatNativeDateModule,

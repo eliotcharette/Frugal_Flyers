@@ -6,6 +6,8 @@ import { ItalyComponent } from './italy/italy.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { IcelandComponent } from './iceland/iceland.component';
 import { AboutComponent } from './about/about.component';
+import { HotelsearchComponent } from './hotelsearch/hotelsearch.component';
+import { DealsComponent } from './deals/deals.component';
 
 const appRoutes: Routes = [
   {
@@ -29,8 +31,17 @@ const appRoutes: Routes = [
     component: IcelandComponent
   },
   {
+    path: 'deals',
+    component:DealsComponent
+  },
+
+  {
     path: 'about',
     component:AboutComponent
+  },
+  {
+    path: 'hotels',
+    component:HotelsearchComponent
   }
 ];
 
