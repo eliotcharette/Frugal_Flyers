@@ -11,6 +11,8 @@ import { BogotaComponent } from './bogota/bogota.component';
 import { CaliComponent } from './cali/cali.component';
 import { CartagenaComponent } from './cartagena/cartagena.component';
 import { MedellinComponent } from './medellin/medellin.component';
+import { NewzealandComponent } from './newzealand/newzealand.component';
+import { CroatiaComponent } from './croatia/croatia.component';
 
 
 const appRoutes: Routes = [
@@ -58,6 +60,14 @@ const appRoutes: Routes = [
     path: 'carrib',
     component:CarribComponent
   },
+  {
+    path: 'newzealand',
+    component: NewzealandComponent
+  },
+  {
+    path: 'croatia',
+    component: CroatiaComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
