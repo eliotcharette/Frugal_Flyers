@@ -1,0 +1,28 @@
+p.name {
+  font-size: 23px;
+  font-weight: bold;
+}
+div.colom {
+  background-image: url("/assets/tay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
+}
+div.moveBody {
+  padding: 25px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .9;
+}
+li a {
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 50px;
+  font-size: 23px;
+}
