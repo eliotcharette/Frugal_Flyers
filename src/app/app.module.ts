@@ -13,7 +13,6 @@ import { SearchComponent } from './search/search.component';
 import { DealsComponent } from './deals/deals.component';
 import { LoginComponent } from './login/login.component';
 import { ResultsComponent } from './results/results.component';
-import { ProfileComponent } from './profile/profile.component';
 import { ColombiaComponent } from './colombia/colombia.component';
 import { ItalyComponent } from './italy/italy.component';
 import { IcelandComponent } from './iceland/iceland.component';
@@ -41,7 +40,6 @@ library.add(fas, far, fab);
     DealsComponent,
     LoginComponent,
     ResultsComponent,
-    ProfileComponent,
     ColombiaComponent,
     ItalyComponent,
     IcelandComponent,
