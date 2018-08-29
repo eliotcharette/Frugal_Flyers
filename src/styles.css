@@ -1,4 +1,4 @@
-
+/*
 div.body1 {
   background-image: url("/assets/ICE2.jpg");
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@ div.moveQuote {
 
 p.quote {
   font-size: 23px;
-  /*font-style: italic;*/
   font-family: cursive;
 }
 
@@ -65,3 +64,7 @@ p.name {
   width: 100%;
 
 }
+<<<<<<< HEAD
+*/
+=======
+>>>>>>> master

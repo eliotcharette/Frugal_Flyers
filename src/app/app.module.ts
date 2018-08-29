@@ -23,6 +23,14 @@ import { MedellinComponent } from './medellin/medellin.component';
 import { CartagenaComponent } from './cartagena/cartagena.component';
 import { CaliComponent } from './cali/cali.component';
 import { CarribComponent } from './carrib/carrib.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fas, far, fab);
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +90,7 @@ import { CarribComponent } from './carrib/carrib.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    FontAwesomeModule,
     routing
   ],
   providers: [],

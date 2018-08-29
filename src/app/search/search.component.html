@@ -33,7 +33,11 @@
     <td>
       <mat-checkbox>First Class</mat-checkbox>
     </td>
-  <button  mat-raised-button color="primary" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''">Submit</button>
+    <mat-form-field class="example-full-width">
+      <input #newMaxPrice matInput placeholder="Max Price">
+    </mat-form-field>
+  <button  mat-raised-button color="primary" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value, newMaxPrice.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''; newMaxPrice.value = ''">Submit</button>
+  <a href="https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_A">Airports Codes | Click Here!</a>
 </form>
 </mat-card>
 </div>
@@ -41,7 +45,7 @@
 <app-results [childFlights]="results"></app-results>
 </div>
 <div *ngIf="results === null">
-<h3>There is no flights for this date.</h3>
+<h3></h3>
 </div>
 
 <app-featured></app-featured>
