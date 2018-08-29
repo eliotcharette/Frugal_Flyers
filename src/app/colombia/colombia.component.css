@@ -1,20 +1,28 @@
-/*.img {
-  border: 0;
-  width: 100%;
-  height: 90px;
+p.name {
+  font-size: 23px;
+  font-weight: bold;
 }
-.flag {
-  height: 250px;
-  width: 38px;
+div.colom {
+  background-image: url("/assets/salento.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-family: times;
 }
-
-li {
-    display: block;
-    color: black;
-    padding: 20px 50px;
-
+div.moveBody {
+  padding: 25px;
+  border: solid;
+  border-width: 1px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: .8;
 }
-
-li a:hover {
-    background-color: lightgrey;
-}*/
+li a {
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 50px;
+  font-size: 23px;
+}
