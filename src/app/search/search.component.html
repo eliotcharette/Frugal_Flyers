@@ -13,6 +13,7 @@
     <td><mat-form-field class="example-full-width">
       <input #newArrival matInput placeholder="Arrive at">
     </mat-form-field></td>
+    <a class="code" href="https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_A">Airports Codes</a>
   </tr></table>
 
 <table class="example-full-width" cellspacing="0"><tr>
@@ -37,7 +38,6 @@
       <input #newMaxPrice matInput placeholder="Max Price">
     </mat-form-field>
   <button  mat-raised-button color="primary" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value, newMaxPrice.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''; newMaxPrice.value = ''">Submit</button>
-  <a href="https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_A">Airports Codes | Click Here!</a>
 </form>
 </mat-card>
 </div>
