@@ -28,6 +28,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { NewzealandComponent } from './newzealand/newzealand.component';
+import { CroatiaComponent } from './croatia/croatia.component';
 library.add(fas, far, fab);
 
 
@@ -51,6 +53,8 @@ library.add(fas, far, fab);
     CartagenaComponent,
     CaliComponent,
     CarribComponent,
+    NewzealandComponent,
+    CroatiaComponent,
   ],
   imports: [
     MatNativeDateModule,
