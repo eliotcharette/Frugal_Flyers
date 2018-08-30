@@ -1,0 +1,22 @@
+#projectTitle {
+  float:left;
+}
+button{
+  float:right;
+}
+
+button.header{
+  padding: 1px;
+  margin: 3px;
+  border-radius: 8px;
+  border-color: #00000000;
+  border-width: 3px;
+
+}
+
+.container-fluid{
+  width:100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
