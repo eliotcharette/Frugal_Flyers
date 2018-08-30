@@ -43,4 +43,4 @@ testem.log
 Thumbs.db
 
 # API
-/src/app/env.ts
+env.ts
