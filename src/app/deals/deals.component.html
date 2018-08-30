@@ -39,7 +39,7 @@
   <button  mat-raised-button color="primary" (click)="submitForm(newDeparture.value, newArrival.value, newDepartDate.value, newReturnDate.value, newPassenger.value, newMaxPrice.value); newDeparture.value=''; newArrival.value=''; newDepartDate.value=''; newReturnDate.value = ''; newPassenger.value = ''; newMaxPrice.value = ''">Submit</button>
 </form>
 </mat-card>
-</div>
+
 <div *ngIf="results != null">
 <app-results [childFlights]="results"></app-results>
 </div>
@@ -48,4 +48,5 @@
 </div>
 
 <app-featured></app-featured>
+</div>
 </div>

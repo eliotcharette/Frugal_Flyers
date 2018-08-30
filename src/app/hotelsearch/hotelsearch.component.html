@@ -21,13 +21,13 @@
   <button  mat-raised-button color="primary" (click)="submitForm(newLocation.value, newCheckIN.value, newCheckOut.value); newLocation.value=''; newCheckIN.value=''; newCheckOut.value=''">Submit</button>
 </form>
 </mat-card>
-</div>
+
 <div *ngIf="results != null">
 <app-searchresult [childHotels]="results"></app-searchresult>
 </div>
 <div *ngIf="results === null">
 <h3>There is no hotels for this date.</h3>
 </div>
-
 <app-featured></app-featured>
+</div>
 </div>

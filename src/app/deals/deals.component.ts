@@ -6,7 +6,7 @@ import { FlightService } from '../flight.service';
 @Component({
   selector: 'app-deals',
   templateUrl: './deals.component.html',
-  styleUrls: ['./deals.component.scss'],
+  styleUrls: ['./deals.component.css'],
   providers: [FlightService]
 })
 export class DealsComponent  {
