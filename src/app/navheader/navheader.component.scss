@@ -1,14 +1,42 @@
-#projectTitle {
-  float:left;
-}
-button{
-  float:right;
-}
-
 button.header{
   padding: 1px;
   margin: 3px;
   border-radius: 8px;
   border-color: #00000000;
   border-width: 3px;
+  width: 200px;
+}
+div.moveLogo {
+ margin: 10px;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+button.test {
+
+  outline: none;
+}
+
+mat-menu {
+  background-color: green;
+}
+div.testMove {
+  width: 200px;
+}
+button.test:hover {
+  outline: none;
+  background-color: #FFD700;
+}
+div.row {
+  padding-top: 8px;
+  margin-right: 1px;
+}
+div.main {
+  background-color: #6600cc;
+  min-height: 60px;
+
 }
