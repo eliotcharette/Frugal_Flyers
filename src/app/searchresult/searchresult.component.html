@@ -1,19 +1,15 @@
 
+  <div>
     <h1>Hotels:</h1>
-    <div class="col-md-6">
+    <div class="move">
       <ng-container *ngFor="let result of childHotels.results">
         <mat-card>
-        <li>
+          <!-- <li> -->
           <p>Hotels: {{result.property_name}}</p><br>
           <p>Price: ${{result.total_price.amount}}</p>
-        </li>
+          <!-- </li> -->
 
-
-
-
-
-
-
-      </mat-card>
+        </mat-card>
       </ng-container>
-        </div>
+    </div>
+  </div>
