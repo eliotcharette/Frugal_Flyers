@@ -1,6 +1,6 @@
 <div class="news">
     <h1>Flights:</h1>
-    <div class="col-md-6">
+    <div class="move">
       <ng-container *ngFor="let result of childFlights.results">
         <mat-card>
         <li>Flight Duration: {{result.itineraries[0].outbound.duration}}</li>
@@ -48,4 +48,3 @@
       </ng-container>
         </div>
         </div>
-<app-search></app-search>
